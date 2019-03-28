@@ -1,0 +1,20 @@
+[user]
+	name = Lev Lamberov
+	email = dogsleg@debian.org
+[credential]
+	helper = cache --timeout=3600
+[alias]
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
+        lograph = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[color]
+	ui = true
+[push]
+	default = current
+[core]
+	editor = emacs
+[branch]
+	autosetuprebase = always
+[url "ssh://git@salsa.debian.org/"]
+	insteadOf = salsa:
+[url "git@salsa.debian.org:"]
+	pushInsteadOf = https://salsa.debian.org/
