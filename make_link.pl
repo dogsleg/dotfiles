@@ -24,8 +24,8 @@ use strict;
 use autodie;
 
 use Cwd qw/abs_path cwd/;
-use File::Basename 'fileparse';
 use File::Copy 'copy';
+use File::Spec;
 
 die "Provide a path to your file" unless ($ARGV[0]);
 die "Path does not exist or is not a file" unless -f $ARGV[0];
@@ -38,7 +38,7 @@ print("[INFO] Current directory: " . $cur_dir . "\n");
 
 die "File is not readable" unless -r $abs_path;
 
-my $filename = fileparse($abs_path, qr/\.[^.]*/);
+my $filename = File::Spec->splitpath($abs_path);
 my $target = $cur_dir . "/" . $filename;
 print("[INFO] Target file: " . $target . "\n");
 
