@@ -1,0 +1,46 @@
+Config { font = "-*-terminus-*-r-*-*-14-*-*-*-*-*-*-*"
+       , borderColor = "black"
+       , border = TopB
+       , bgColor = "black"
+       , fgColor = "grey"
+       , position = TopW L 100
+       , commands = [ Run Kbd [
+                                    ("us", "<fc=blue>EN</fc>"),
+                                    ("ru", "<fc=#A52A2A>RU</fc>")
+                                    ]
+                    , Run MultiCpu [
+                                     "-t" , "<autototal>",
+                                     "--Low", "5",
+                                     "--High", "50",
+                                     "--low", "gray",
+                                     "--normal", "#D5CD6A",
+                                     "--high", "#A52A2A",
+                                     "-c", " ",
+                                     "-w", "3"
+                                   ] 20
+                    , Run Memory [
+                                   "-t", "<used>",
+                                   "-H", "6500",
+                                   "-L", "3000",
+                                   "-h", "#A52A2A",
+                                   "-l", "#D5CD6A",
+                                   "-n", "grey"
+                                 ] 20
+                    , Run Battery [
+                                    "-t", "<left><acstatus>",
+                                    "--Low", "15",
+                                    "--High", "75",
+                                    "--low", "#A52A2A",
+                                    "--normal", "#D5CD6A",
+                                    "--high", "#8DBF27",
+                                    "--", "-O", "<fc=green>+</fc>",
+                                    "-o", "<fc=red>-</fc>",
+                                    "-i", "<fc=grey>i</fc>"
+                                  ] 50
+                    , Run Date "%_d.%m.%Y %H:%M:%S" "date" 10
+                    , Run StdinReader
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = "%StdinReader% }{ :: %kbd% :: %multicpu% :: %memory% :: %battery% :: <fc=#D8831E>%date%</fc>"
+       }

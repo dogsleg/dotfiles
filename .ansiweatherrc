@@ -1,0 +1,4 @@
+location:Yekaterinburg,RU
+daylight:true
+dateformat:%a %d %b
+timeformat:%d %b %R

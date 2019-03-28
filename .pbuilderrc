@@ -1,0 +1,28 @@
+AUTO_DEBSIGN="${AUTO_DEBSIGN:-no}"
+HOOKDIR="/var/cache/pbuilder/hooks"
+PDEBUILD_PBUILDER=cowbuilder
+MIRRORSITE="https://deb.debian.org/debian/"
+
+#APTCACHE=/var/cache/pbuilder/aptcache
+APTCACHE=/var/cache/apt/archives
+
+# Place build result to ../build-result/
+BUILDRESULT=../build-result/
+
+EXTRAPACKAGES="eatmydata"
+#EXTRAPACKAGES="ccache eatmydata"
+
+# Enable libeatmydata1 for pbuilder
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH:+"$LD_LIBRARY_PATH:"}/usr/lib/libeatmydata
+export LD_PRELOAD="${LD_PRELOAD:+$LD_PRELOAD:}libeatmydata.so"
+
+# Enable builtin eatmydata support
+EATMYDATA=yes
+
+# Enable ccache for pbuilder
+#export CCACHE_DIR="/var/cache/pbuilder/ccache"
+#export PATH="/usr/lib/ccache:${PATH}"
+#BINDMOUNTS="${CCACHE_DIR}"
+
+# Parallel make
+DEBBUILDOPTS=-j8
