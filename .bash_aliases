@@ -11,6 +11,9 @@ alias psc="ps xawf -eo pid,user,cgroup,args"
 # Better mkdir
 alias mkdir='mkdir -p'
 
+# Better ssh-add
+alias ssh-add='ssh-add -c -t 4h'
+
 # Prevent clobbering
 alias rm='rm -i'
 alias cp='cp -i'
