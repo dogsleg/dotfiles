@@ -12,7 +12,7 @@ alias psc="ps xawf -eo pid,user,cgroup,args"
 alias mkdir='mkdir -p'
 
 # Better ssh-add
-alias ssh-add='ssh-add -c -t 4h'
+alias ssh-add='ssh-add -c -t 1h'
 
 # Prevent clobbering
 alias rm='rm -i'
