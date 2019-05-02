@@ -1,0 +1,17 @@
+$build_arch_all = 1;
+$distribution = 'unstable';
+
+# lintian
+$run_lintian = 1;
+$lintian_opts = ['--display-level', '>=pedantic/wild-guess'];
+
+# piuparts
+# $run_piuparts = 1;
+# $piuparts_opts = ['--schroot', 'unstable-amd64-sbuild'];
+
+# autopkgtest
+$run_autopkgtest = 1;
+$autopkgtest_root_args = '';
+$autopkgtest_opts = [ '--', 'schroot', '%r-%a-sbuild' ];
+
+1;
