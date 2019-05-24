@@ -1,7 +1,7 @@
 AUTO_DEBSIGN="${AUTO_DEBSIGN:-no}"
 HOOKDIR="/var/cache/pbuilder/hooks"
 PDEBUILD_PBUILDER=cowbuilder
-MIRRORSITE="https://deb.debian.org/debian/"
+MIRRORSITE="http://HTTPS///deb.debian.org/debian/"
 
 #APTCACHE=/var/cache/pbuilder/aptcache
 APTCACHE=/var/cache/apt/archives
