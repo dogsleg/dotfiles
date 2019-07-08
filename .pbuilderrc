@@ -26,3 +26,6 @@ EATMYDATA=yes
 
 # Parallel make
 DEBBUILDOPTS=-j8
+
+# Source-only
+SOURCE_ONLY_CHANGES=yes
