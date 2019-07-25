@@ -2,8 +2,8 @@
 alias less='less -M'
 
 # Better ls
-alias lsa='ls --color=auto -la'
-alias ls='ls --color=auto'
+alias lsa='ls -la'
+alias ls='ls'
 
 # Better ps
 alias psc="ps xawf -eo pid,user,cgroup,args"
