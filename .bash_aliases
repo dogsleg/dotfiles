@@ -3,7 +3,7 @@ alias less='less -M'
 
 # Better ls
 alias ls='ls -h --time-style long-iso'
-alias lsa='ls -lah --time-style long-iso'
+alias lsa='ls -lAh --time-style long-iso'
 
 # Better ps
 alias psc="ps xawf -eo pid,user,cgroup,args"
