@@ -27,5 +27,8 @@ setxkbmap 'us,ru' -option 'grp:caps_toggle,compose:ralt,grp_led:scroll'
 # Run mpdas
 /usr/bin/mpdas -d
 
+# Run dunst
+/usr/bin/dunst &
+
 # Run XMonad
 /usr/bin/xmonad
