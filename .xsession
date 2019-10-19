@@ -10,7 +10,7 @@
 /usr/bin/xset r rate 200 30
 
 # Configure keyboard and some key bindings
-setxkbmap 'us,ru' -option 'grp:caps_toggle,compose:ralt,grp_led:scroll'
+setxkbmap 'us,ru' -option 'grp:caps_toggle,compose:ralt,grp_led:scroll,terminate:ctrl_alt_bksp'
 
 # Run trayer
 /usr/bin/trayer --edge top --align right --SetDockType true --SetPartialStrut true  --expand true --width 10 --transparent true --tint 0x000000 --alpha 0 --height 17 --distance 500 --distancefrom right &
