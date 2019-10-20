@@ -1,2 +1,5 @@
 # Create MIME messages by default
 set mime
+
+# Set return email address
+set return-address "Lev Lamberov <dogsleg@debian.org>"
