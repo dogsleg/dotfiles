@@ -109,6 +109,10 @@ export EDITOR="emacsclient -c"
 # GPG
 export GPG_TTY=$(tty)
 
+# Use GPG subkeys for SSH
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+gpgconf --launch gpg-agent
+
 # MC
 . /usr/lib/mc/mc.sh
 
