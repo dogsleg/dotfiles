@@ -11,6 +11,9 @@ URxvt.url-launcher:    /usr/bin/firefox
 URxvt.matcher.button:  1
 URxvt.colorUL:         #4682B4
 URxvt*.transparent:    false
+URxvt*tintColor:       Blue
+URxvt*color4:          RoyalBlue
+URxvt*color12:         RoyalBlue
 
 ! xterm ----------------------------------------------------------------------
 !xterm*font:       -xos4-terminus-*-r-normal--30-*-*-*-*-*-*-*
