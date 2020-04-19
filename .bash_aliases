@@ -38,6 +38,9 @@ alias myip="ip -br -c a"
 alias pbcopy="xclip -selection clipboard"
 alias pbpaste="xclip -selection clipboard -o"
 
+# swipl with Java support
+alias swipl="LD_LIBRARY_PATH=$(dirname $(find /usr/lib -name libjvm.so)) /usr/bin/swipl"
+
 # Other stuff
 alias chromium_remote="chromium --enable-remote-extensions &"
 alias dosbox='cd /home/dogsleg/scripts/dos;dosbox'
