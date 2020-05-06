@@ -21,6 +21,9 @@ setxkbmap 'us,ru' -option 'grp:caps_toggle,compose:ralt,grp_led:scroll,terminate
 # Run Dropbox client
 /usr/bin/dropbox start
 
+# Run Network Manager applet
+/usr/bin/nm-applet
+
 # Run compton
 /usr/bin/compton &
 
