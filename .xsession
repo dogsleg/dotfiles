@@ -32,3 +32,6 @@ setxkbmap 'us,ru' -option 'grp:caps_toggle,compose:ralt,grp_led:scroll,terminate
 
 # Run XMonad
 /usr/bin/xmonad
+
+# Run i3
+# /usr/bin/i3
