@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Main background color
+/usr/bin/xsetroot -solid black
+
+# Default mouse cursor
+/usr/bin/xsetroot -cursor_name left_ptr
+
+# Set keyboard behavior
+/usr/bin/xset r rate 200 30
+
+# Configure keyboard and some key bindings
+setxkbmap 'us,ru' -option 'grp:caps_toggle,compose:ralt,grp_led:scroll,terminate:ctrl_alt_bksp'
+
+# Switch on Num Lock
+/usr/bin/numlockx on
+
+# Run Dropbox client
+/usr/bin/dropbox start
+
+# Run compton
+/usr/bin/compton -b
+
+# Set random wallpaper
+feh --randomize --bg-fill  ~/Pictures/Wallpapers/
+
+# Run i3
+/usr/bin/i3
