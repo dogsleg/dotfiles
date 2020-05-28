@@ -1,0 +1,76 @@
+# Use %n to display the window number and %t for its title
+activity "activity in %n (%t) [%w:%s]~"
+
+# Automatic detach upon hangup
+autodetach on
+
+# Define the appearance of bell
+bell "bell     in %n (%t) [%w:%s]~"
+
+# Use LF to separate line when copying
+crlf off
+
+# Do not set window as logged in
+deflogin off
+
+# Set the size of scrollback buffer
+defscrollback 10000
+
+# Configure hardstatus line
+hardstatus alwayslastline "%{= kw}%-w%{= BW}%n %t%{-}%+w %=%{g}[%{Y}%l%{g}]%{=b C}%{-}%{G}[%m/%d/%y %c]"
+
+# Wait 2 seconds before displaying a new message
+msgminwait 2
+
+# Message shown when session gets power detached
+pow_detach_msg "Screen session of \$LOGNAME \$:cr:\$:nl:ended."
+
+# Wait for 15 seconds before displaying a message concerning monitored window
+silencewait 15
+
+# Set the colors for messages and text marking
+sorendition 10 99
+
+# Do not show the startup message
+startup_message off
+
+# Set shell to bash
+shell /bin/bash
+
+# Use the normal screen buffer in xterm
+termcapinfo xterm|xterms|xs|rxvt ti@:te@
+
+# Disable audible bell
+vbell on
+
+# Message shown when the virtual bell rings
+vbell_msg " *beep* "
+
+# Bind C-a - # to switch to windows with numbers > 9
+bind - command -c select_1n
+bind -c select_1n 0 select 10
+bind -c select_1n 1 select 11
+bind -c select_1n 2 select 12
+bind -c select_1n 3 select 13
+bind -c select_1n 4 select 14
+bind -c select_1n 5 select 15
+bind -c select_1n 6 select 16
+bind -c select_1n 7 select 17
+bind -c select_1n 8 select 18
+bind -c select_1n 9 select 19
+bind -c select_1n - command -c select_2n
+bind -c select_2n 0 select 20
+bind -c select_2n 1 select 21
+bind -c select_2n 2 select 22
+bind -c select_2n 3 select 23
+bind -c select_2n 4 select 24
+bind -c select_2n 5 select 25
+bind -c select_2n 6 select 26
+bind -c select_2n 7 select 27
+bind -c select_2n 8 select 28
+bind -c select_2n 9 select 29
+bind -c select_2n - select -
+
+# Bind F11/F12 to prev/next; no, it's not F1/F2
+bindkey -k F1 prev
+bindkey -k F2 next
