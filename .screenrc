@@ -1,6 +1,9 @@
 # Use %n to display the window number and %t for its title
 activity "activity in %n (%t) [%w:%s]~"
 
+# Enable alternate screen support
+altscreen on
+
 # Automatic detach upon hangup
 autodetach on
 
@@ -37,7 +40,8 @@ startup_message off
 # Set shell to bash
 shell /bin/bash
 
-# Use the normal screen buffer in xterm
+# Set termcaps for rxvt and xterm
+termcapinfo rxvt* 'hs:ts=\E]2;:fs=\007:ds=\E]2;\007'
 termcapinfo xterm|xterms|xs|rxvt ti@:te@
 
 # Disable audible bell
