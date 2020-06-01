@@ -3,8 +3,8 @@ $distribution = 'unstable';
 $source_only_changes = 1;
 
 # lintian
-$run_lintian = 1;
-$lintian_opts = ['--display-level', '>=pedantic'];
+# $run_lintian = 1;
+# $lintian_opts = ['--display-level', '>=pedantic'];
 
 # piuparts
 # $run_piuparts = 1;
