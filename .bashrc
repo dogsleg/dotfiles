@@ -15,6 +15,8 @@ export HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+HISTSIZE=5000
+HISTFILESIZE=10000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -98,6 +100,16 @@ PATH=$PATH:$HOME/bin
 
 # Time format for history
 HISTTIMEFORMAT="%F %T  "
+
+# Set up less
+export LESS="QR"
+
+# Fix some spelling errors in tab-completions
+shopt -s cdspell
+shopt -s dirspell
+
+# Allow ** to recurse
+shopt -s globstar 2> /dev/null
 
 # Debian definitions
 export DEBEMAIL="dogsleg@debian.org"
