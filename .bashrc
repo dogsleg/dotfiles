@@ -116,12 +116,10 @@ export DEBFULLNAME="Lev Lamberov"
 export EDITOR="emacsclient -c"
 
 # GPG
-GPG_TTY=$(tty)
-export $GPG_TTY
+export GPG_TTY=$(tty)
 
 # Use GPG subkeys for SSH
-SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
-export $SSH_AUTH_SOCK
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 gpgconf --launch gpg-agent
 
 # MC
