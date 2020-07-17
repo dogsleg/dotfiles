@@ -19,7 +19,7 @@ setxkbmap 'us,ru' -option 'grp:caps_toggle,compose:ralt,grp_led:scroll,terminate
 /usr/bin/dropbox start
 
 # Run compton
-/usr/bin/compton -b
+/usr/bin/picom -b
 
 # Set random wallpaper
 feh --randomize --bg-fill  ~/Pictures/Wallpapers/
