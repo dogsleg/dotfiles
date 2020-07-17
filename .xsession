@@ -24,8 +24,8 @@ setxkbmap 'us,ru' -option 'grp:caps_toggle,compose:ralt,grp_led:scroll,terminate
 # Run Network Manager applet
 /usr/bin/nm-applet &
 
-# Run compton
-/usr/bin/compton -b
+# Run picom
+/usr/bin/picom -b
 
 # Run XMonad
 /usr/bin/xmonad
