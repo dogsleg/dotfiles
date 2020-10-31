@@ -19,3 +19,5 @@
 	insteadOf = salsa:
 [url "git@salsa.debian.org:"]
 	pushInsteadOf = https://salsa.debian.org/
+[tag]
+	sort = creatordate
