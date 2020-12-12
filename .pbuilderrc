@@ -29,7 +29,7 @@ EATMYDATA=yes
 DEBBUILDOPTS=-j8
 
 # Source-only
-#SOURCE_ONLY_CHANGES=yes
+SOURCE_ONLY_CHANGES=yes
 
 # Include local packages in the build
 HOOKDIR="$HOME/.pbuilder/hooks/"
