@@ -46,3 +46,7 @@ alias chromium_remote="chromium --enable-remote-extensions &"
 alias dosbox='cd /home/dogsleg/scripts/dos;dosbox'
 alias innbox="ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 admin@192.168.1.1"
 alias steam_nosb="R600_DEBUG=nosb steam &"
+
+# Handle external disk with cryptsetup
+alias ext_mount="sudo cryptsetup luksOpen /dev/sdb1 data; sudo mount /dev/mapper/data /mnt/disk"
+alias ext_umount="sync; sudo umount /mnt/disk; sudo cryptsetup luksClose data"
