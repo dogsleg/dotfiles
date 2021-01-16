@@ -25,7 +25,7 @@ setxkbmap 'us,ru' -option 'grp:caps_toggle,compose:ralt,grp_led:scroll,terminate
 /usr/bin/nm-applet &
 
 # Run picom
-# /usr/bin/picom -b
+/usr/bin/picom -b
 
 # Run XMonad
 /usr/bin/xmonad
