@@ -34,6 +34,9 @@ alias magit='emacsclient -c -n -e "(progn (magit-status) (delete-other-windows))
 # Display the list of all available ports, their status, and IP
 alias myip="ip -br -c a"
 
+# Memory usage
+alias mem="ps -eo pid,ppid,%mem,%cpu,comm --sort=-%mem | head"
+
 # pb{copy,paste}
 alias pbcopy="xclip -selection clipboard"
 alias pbpaste="xclip -selection clipboard -o"
