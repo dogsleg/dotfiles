@@ -132,5 +132,6 @@ complete -F _quilt_completion $_quilt_complete_opt dquilt
 # Prompt style
 PS1="\[\033[35m\]\t\[\033[m\]-\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
 
+# Perl
 PERL_MB_OPT="--install_base \"/home/dogsleg/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/dogsleg/perl5"; export PERL_MM_OPT;
