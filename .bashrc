@@ -135,3 +135,9 @@ PS1="\[\033[35m\]\t\[\033[m\]-\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;
 # Perl
 PERL_MB_OPT="--install_base \"/home/dogsleg/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/dogsleg/perl5"; export PERL_MM_OPT;
+
+# exercism
+
+if [ -f ~/.config/exercism/exercism_completion.bash ]; then
+    source ~/.config/exercism/exercism_completion.bash
+fi
