@@ -7,8 +7,11 @@ pedantic = wild-guess
 # Enable experimental tags by default (--display-experimental)
 display-experimental = yes
 
-# Enable colored output for terminal output (--color)
-color = auto
+# Disable colored output for terminal output (--color)
+color = never
 
 # Show overridden tags (--show-overrides)
 show-overrides = yes
+
+# Show all repeating warnings (--tag-display-limit)
+tag-display-limit = 0
