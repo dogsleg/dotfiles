@@ -20,7 +20,7 @@ alias cp='cp -i'
 alias mv='mv -i'
 
 # External IP
-alias ipext='curl ipinfo.io/ip'
+alias ipext='curl -w "\n" ipinfo.io/ip'
 
 # Run just 5 pings
 alias ping5='ping -c 5'
