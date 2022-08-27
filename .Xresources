@@ -5,7 +5,7 @@ URxvt*background:      [80]Black
 URxvt*foreground:      White
 URxvt*scrollBar:       false
 URxvt*internalBorder:  5
-URxvt.font:            -xos4-terminus-*-r-normal-*-14-140-72-72-c-80-*-*
+URxvt.font:            -xos4-terminus-*-r-normal-*-18-180-72-72-c-100-*-u
 URxvt.perl-ext-common: default,matcher,tabbed,confirm-paste
 URxvt.url-launcher:    /usr/bin/firefox
 URxvt.matcher.button:  1
@@ -28,4 +28,4 @@ Emacs.menuBar:            off
 Emacs.verticalScrollBars: off
 Emacs.toolBar:            off
 Emacs.cursorBlink:        off
-Emacs.font:               -xos4-terminus-*-r-normal-*-14-140-72-72-c-80-*-*
+Emacs.font:               -xos4-terminus-*-r-normal-*-18-180-72-72-c-100-*-*
