@@ -22,3 +22,5 @@
 	pushInsteadOf = https://salsa.debian.org/
 [tag]
 	sort = creatordate
+[url "git@salsa.debian.org:installer-team/"]
+	pushInsteadOf = https://salsa.debian.org/installer-team/
