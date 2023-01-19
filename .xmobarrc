@@ -1,4 +1,4 @@
-Config { font = "-*-terminus-*-r-*-*-14-*-*-*-*-*-*-*"
+Config { font = "Terminus Bold 10"
        , borderColor = "black"
        , border = TopB
        , bgColor = "black"
