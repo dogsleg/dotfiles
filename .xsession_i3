@@ -17,7 +17,10 @@ setxkbmap -option 'compose:ralt,grp_led:scroll,terminate:ctrl_alt_bksp'
 /usr/bin/numlockx on
 
 # Run Dropbox client
-/usr/bin/dropbox start
+/usr/bin/dropbox start &
+
+# Run Network Manager applet
+/usr/bin/nm-applet &
 
 # Run picom
 /usr/bin/picom -b
