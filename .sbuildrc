@@ -1,6 +1,7 @@
 $build_arch_all = 1;
 $distribution = 'unstable';
 $source_only_changes = 1;
+# $force_orig_source = 1;
 
 # lintian
 $run_lintian = 0;
