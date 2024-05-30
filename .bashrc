@@ -147,3 +147,9 @@ PERL_MM_OPT="INSTALL_BASE=/home/dogsleg/perl5"; export PERL_MM_OPT;
 if [ -f ~/.config/exercism/exercism_completion.bash ]; then
     source ~/.config/exercism/exercism_completion.bash
 fi
+
+# Wayland for Mozilla
+
+if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
+    export MOZ_ENABLE_WAYLAND=1
+fi
