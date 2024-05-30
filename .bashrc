@@ -93,7 +93,7 @@ if [ -f /etc/bash_completion ]; then
 fi
 
 # Add ~/scripts to PATH
-PATH=$PATH:$HOME/bin
+PATH=$HOME/bin:$PATH
 
 # Time format for history
 HISTTIMEFORMAT="%F %T  "
