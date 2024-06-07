@@ -28,4 +28,4 @@ Emacs.menuBar:            off
 Emacs.verticalScrollBars: off
 Emacs.toolBar:            off
 Emacs.cursorBlink:        off
-Emacs.font:               -xos4-terminus-*-r-normal-*-16-160-72-72-c-80-*-*
+Emacs.font:               Terminus (TTF) Medium 12
