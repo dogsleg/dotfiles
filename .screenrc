@@ -44,7 +44,7 @@ shell /bin/bash
 termcapinfo rxvt* 'hs:ts=\E]2;:fs=\007:ds=\E]2;\007'
 termcapinfo xterm|xterms|xs|rxvt ti@:te@
 
-# Disable audible bell
+# Enable visual bell
 vbell on
 
 # Message shown when the virtual bell rings
