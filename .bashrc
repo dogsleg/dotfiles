@@ -133,7 +133,6 @@ complete -F _quilt_completion $_quilt_complete_opt dquilt
 PS1="\[\033[35m\]\t\[\033[m\]-\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
 
 # ibus
-
 export GTK_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
@@ -143,13 +142,14 @@ PERL_MB_OPT="--install_base \"/home/dogsleg/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/dogsleg/perl5"; export PERL_MM_OPT;
 
 # exercism
-
 if [ -f ~/.config/exercism/exercism_completion.bash ]; then
     source ~/.config/exercism/exercism_completion.bash
 fi
 
-# Wayland for Mozilla
+# Where screenshots should be placed
+XDG_SCREENSHOTS_DIR=$HOME/screenshots
 
+# Wayland for Mozilla
 if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
     export MOZ_ENABLE_WAYLAND=1
     export QT_QPA_PLATFORM=wayland
