@@ -20,7 +20,7 @@ deflogin off
 defscrollback 10000
 
 # Configure hardstatus line
-hardstatus alwayslastline "%{= kw}%-w%{= BW}%n %t%{-}%+w %=%{g}[%{Y}%l%{g}]%{=b C}%{-}%{G}[%d/%m/%y %c]"
+hardstatus alwayslastline "%{= kw}%-w%{= BW}%n %t%{-}%+w %=%{g}[%{d}@%{c}%H%{g}]%{g}[%{Y}%l%{g}]%{=b C}%{-}%{G}[%d/%m/%y %c]"
 
 # Wait 2 seconds before displaying a new message
 msgminwait 2
