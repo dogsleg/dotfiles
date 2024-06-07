@@ -153,4 +153,5 @@ XDG_SCREENSHOTS_DIR=$HOME/screenshots
 if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
     export MOZ_ENABLE_WAYLAND=1
     export QT_QPA_PLATFORM="wayland;xcb"
+    export ELECTRON_OZONE_PLATFORM_HINT=wayland
 fi
