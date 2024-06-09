@@ -17,7 +17,7 @@ crlf off
 deflogin off
 
 # Set the size of scrollback buffer
-defscrollback 10000
+defscrollback 25000
 
 # Configure hardstatus line
 hardstatus alwayslastline "%{= kw}%{g}[%{d}@%{c}%H%{g}]%{= kw}::%{g}[%{= kw}%-Lw%n%f* %t%+Lw%{g}] %=%{g}[%{Y}%l%{g}]%{= kw}::%{=b C}%{-}%{g}[%{G}%d/%m/%y %c%{g}]"
@@ -79,3 +79,11 @@ bind -c select_2n - select -
 # Bind F11/F12 to prev/next; no, it's not F1/F2
 bindkey -k F1 prev
 bindkey -k F2 next
+
+# Unbind some dummy or dangerous stuff
+bind .
+bind h
+bind ^h
+bind x
+bind ^x
+bind ^\
