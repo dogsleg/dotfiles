@@ -1,5 +1,5 @@
 # Use %n to display the window number and %t for its title
-activity "activity in %n (%t) [%w:%s]~"
+activity ""
 
 # Enable alternate screen support
 altscreen on
@@ -18,6 +18,9 @@ deflogin off
 
 # Set the size of scrollback buffer
 defscrollback 25000
+
+# Enable monitor
+defmonitor on
 
 # Configure hardstatus line
 hardstatus alwayslastline "%{= kw}%{g}[%{d}@%{c}%H%{g}]%{= kw}::%{g}[%{= kw}%-Lw%n%f* %t%+Lw%{g}] %=%{g}[%{Y}%l%{g}]%{= kw}::%{=b C}%{-}%{g}[%{G}%d/%m/%y %c%{g}]"
