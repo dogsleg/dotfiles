@@ -40,9 +40,10 @@ startup_message off
 # Set shell to bash
 shell /bin/bash
 
-# Set termcaps for rxvt and xterm
+# Set termcaps for my terminal emulators
 termcapinfo rxvt* 'hs:ts=\E]2;:fs=\007:ds=\E]2;\007'
 termcapinfo xterm|xterms|xs|rxvt ti@:te@
+termcapinfo foot* ti@:te@
 
 # Enable visual bell
 vbell on
