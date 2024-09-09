@@ -95,6 +95,9 @@ fi
 # Add ~/scripts to PATH
 PATH=$HOME/bin:$PATH
 
+# Set up ccache
+export CCACHE_DIR=$HOME/.ccache
+
 # Time format for history
 HISTTIMEFORMAT="%F %T  "
 
