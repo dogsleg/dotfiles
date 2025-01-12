@@ -1,0 +1,20 @@
+host = 127.0.0.1
+
+display-time = no
+
+enable-colors = yes
+color background = black
+color title = green/black
+color title-bold = white, bold
+color line = red
+color line-flags = yellow
+color list = yellow
+color list-bold = yellow, bold
+color browser-directory = yellow
+color browser-playlist = blue
+color progressbar = red/cyan, bold
+color progressbar-background = black, dim
+color status-state = black/cyan, dim
+color status-song = red/cyan, bold
+color status-time = black, bold
+color alert = red, blink

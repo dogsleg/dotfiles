@@ -1,0 +1,138 @@
+// -*- mode: jsonc -*-
+{
+    // "layer": "top", // Waybar at top layer
+    // "position": "bottom", // Waybar position (top|bottom|left|right)
+    "height": 30, // Waybar height (to be removed for auto height)
+    // "width": 1280, // Waybar width
+    "spacing": 4, // Gaps between modules (4px)
+    // Choose the order of the modules
+    "modules-left": [
+        "sway/workspaces",
+        "sway/mode",
+        "sway/scratchpad"
+    ],
+    "modules-center": [
+        "sway/window"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "network",
+        "cpu",
+        "memory",
+        "temperature",
+        "battery",
+        "sway/language",
+        "clock",
+        "tray"
+    ],
+    // Modules configuration
+    "sway/workspaces": {
+         "all-outputs": false,
+         "alphabetical_sort": false,
+         "disable-scroll": true,
+         "format": "{value}",
+         "warp-on-scroll": false
+    },
+    "sway/mode": {
+        "format": "<span style=\"italic\">{}</span>"
+    },
+    "sway/scratchpad": {
+        "format": "{icon} {count}",
+        "show-empty": false,
+        "format-icons": ["", ""],
+        "tooltip": true,
+        "tooltip-format": "{app}: {title}"
+    },
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+    },
+    "clock": {
+        "interval": 1,
+        "format": "{:%H:%M:%S %F}",
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "calendar": {
+                     "mode"          : "month",
+                     "mode-mon-col"  : 2,
+                     "weeks-pos"     : "left",
+                     "on-scroll"     : 1,
+                     "format": {
+                          "months":     "<span color='#ffead3'><b>{}</b></span>",
+                          "days":       "<span color='#ffffff'>{}</span>",
+                          "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                          "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                          "today":      "<span color='#ff6699'><b>{}</b></span>"
+                     }
+                },
+                "actions": {
+                     "on-click": "mode"
+                }
+    },
+    "cpu": {
+        "interval": 2,
+        "format": "{usage0:3} {usage1:3} {usage2:3} {usage3:3}",
+        "tooltip": false,
+        "on-click": "foot htop"
+    },
+    "memory": {
+        "interval": 2,
+        "format": "{used:0.2f} GiB",
+        "tooltip": false
+    },
+    "temperature": {
+        "interval": 2,
+        // "thermal-zone": 2,
+        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "critical-threshold": 80,
+        // "format-critical": "{temperatureC}°C {icon}",
+        "format": "{temperatureC}°C",
+        "tooltip": false
+    },
+    "battery": {
+        "interval": 5,
+        "states": {
+            "good": 90,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}",
+        "format-full": "{capacity}i",
+        "format-charging": "{capacity}+",
+        "format-discharging": "{capacity}-",
+        "format-plugged": "{capacity}",
+        "format-alt": "{time}",
+        "format-time": "{H:2}:{m:2}"
+    },
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{volume}% {icon} {format_source}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+    "sway/language": {
+        "format": "{shortDescription:2}",
+        "tooltip": false
+        }
+}
